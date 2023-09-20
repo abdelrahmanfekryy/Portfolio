@@ -1,15 +1,14 @@
 //const items = require('../json/resume_items.json');
 //import items from "../json/resume_items.json"; // assert { type: 'json' };;
 
-import * as items from "../json/resume_items.json" assert { type: "json" };
+//import * as items from "../json/resume_items.json" assert { type: "json" };
 
-// async function printJSON() {
-//   const response = await fetch('../json/resume_items.json');
-//   items = await response.json();
-//   alert(items)
-// };
+async function printJSON() {
+  const response = await fetch('../json/resume_items.json');
+  return await response.json();
+};
 
-// printJSON();
+items = printJSON();
 
 
 //items = await readFile(new URL("../json/resume_items.json"))
