@@ -4,7 +4,7 @@
 //import * as items from "../json/resume_items.json" assert { type: "json" };
 
 async function printJSON() {
-  const response = await fetch('./Portfolio/assets/json/resume_items.json');
+  const response = await fetch('https://raw.githubusercontent.com/abdelrahmanfekryy/Portfolio/main/assets/json/resume_items.json');
   return await response.json();
 };
 
