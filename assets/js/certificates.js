@@ -68,10 +68,10 @@ certificates_section.innerHTML =
 
     <div class="modal-img-wrapper">
       <figure class="modal-avatar-box">
-      <!--<img src="./assets/certificates/avatar-1.png" alt="Daniel lewis" width="80" data-canvas-img>-->
+      <!--<img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-canvas-img>-->
       </figure>
 
-      <img src="./assets/certificates/icon-quote.svg" alt="quote icon">
+      <img src="./assets/images/icon-quote.svg" alt="quote icon">
     </div>
 
     <div class="modal-content">
