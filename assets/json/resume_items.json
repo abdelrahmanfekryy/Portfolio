@@ -1,0 +1,50 @@
+[
+    {
+    "section":"Experience",
+    "icon":"briefcase-outline",
+    "content":[
+                {
+                    "title":"Machine Learning Engineer",
+                    "institution":"Kemet Artificial Intelligence · Full-time",
+                    "time":"Jul 2023 — Present",
+                    "description":"Kemet Artificial Intelligence · Full-time"
+                },
+                {
+                    "title":"Data Scientist",
+                    "institution":"CORELIA · Full-time",
+                    "time":"Apr 2022 — Jul 2023",
+                    "description":"CORELIA · Full-time"
+                },
+                {
+                    "title":"Telecommunication Intern",
+                    "institution":"Systel Telecom · Internship",
+                    "time":"Jun 2019 - Aug 2019",
+                    "description":"Systel Telecom · Internship"
+                }
+            ]
+    },
+    {
+        "section":"Education",
+        "icon":"book-outline",
+        "content":[
+                        {
+                        "title":"AWS Cloud Practitioner Programme",
+                        "institution":"African Leadership X (ALX)",
+                        "time":"2023 — 2023",
+                        "description":"African Leadership X (ALX)"
+                    },
+                    {
+                        "title":" AWS Data Science Programme",
+                        "institution":"Practical Data Scientist Academy (MCIT-PDSA)",
+                        "time":"Dec 2021 — Jul 2022",
+                        "description":"Practical Data Scientist Academy (MCIT-PDSA)"
+                    },
+                    {
+                        "title":"Bachelor's degree, Electrical and Electronics Engineering",
+                        "institution":"Higher Technological Institute",
+                        "time":"2014 — 2020",
+                        "description":"Higher Technological Institute"
+                    }
+                ]
+    }
+]

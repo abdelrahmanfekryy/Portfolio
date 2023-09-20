@@ -1,3 +1,27 @@
+//const items = require('../json/resume_items.json');
+//import items from "../json/resume_items.json"; // assert { type: 'json' };;
+
+import * as items from "../json/resume_items.json" assert { type: "json" };
+
+// async function printJSON() {
+//   const response = await fetch('../json/resume_items.json');
+//   items = await response.json();
+//   alert(items)
+// };
+
+// printJSON();
+
+
+//items = await readFile(new URL("../json/resume_items.json"))
+
+// var xObj = new XMLHttpRequest();
+// xObj.overrideMimeType("application/json");
+// xObj.open('GET', '../json/resume_items.json', true);
+// xObj.onreadystatechange = function() { alert(xObj.responseText)}
+
+//var items = JSON.parse(resume_items);
+
+
 const resume_section = document.querySelector(".resume");
 
 resume_section.innerHTML =
@@ -69,47 +93,47 @@ resume_section.innerHTML =
 </section>-->
 `
 
-const aList = resume_section.querySelector(".timeline-list");
 
 
-items = [
-{
-"section":"Experience",
-"icon":"briefcase-outline",
-"content":[
-          {"title":"Machine Learning Engineer",
-          "institution":"Kemet Artificial Intelligence · Full-time",
-          "time":"Jul 2023 — Present",
-          "description":"Kemet Artificial Intelligence · Full-time"},
-          {"title":"Data Scientist",
-          "institution":"CORELIA · Full-time",
-          "time":"Apr 2022 — Jul 2023",
-          "description":"CORELIA · Full-time"},
-          {"title":"Telecommunication Intern",
-          "institution":"Systel Telecom · Internship",
-          "time":"Jun 2019 - Aug 2019",
-          "description":"Systel Telecom · Internship"},
-        ]
-},
-{
-  "section":"Education",
-  "icon":"book-outline",
-  "content":[
-            {"title":"AWS Cloud Practitioner Programme",
-            "institution":"African Leadership X (ALX)",
-            "time":"2023 — 2023",
-            "description":"African Leadership X (ALX)"},
-            {"title":" AWS Data Science Programme",
-            "institution":"Practical Data Scientist Academy (MCIT-PDSA)",
-            "time":"Dec 2021 — Jul 2022",
-            "description":"Practical Data Scientist Academy (MCIT-PDSA)"},
-            {"title":"Bachelor's degree, Electrical and Electronics Engineering",
-            "institution":"Higher Technological Institute",
-            "time":"2014 — 2020",
-            "description":"Higher Technological Institute"},
-          ]
-  },
-]
+
+// items = [
+// {
+// "section":"Experience",
+// "icon":"briefcase-outline",
+// "content":[
+//           {"title":"Machine Learning Engineer",
+//           "institution":"Kemet Artificial Intelligence · Full-time",
+//           "time":"Jul 2023 — Present",
+//           "description":"Kemet Artificial Intelligence · Full-time"},
+//           {"title":"Data Scientist",
+//           "institution":"CORELIA · Full-time",
+//           "time":"Apr 2022 — Jul 2023",
+//           "description":"CORELIA · Full-time"},
+//           {"title":"Telecommunication Intern",
+//           "institution":"Systel Telecom · Internship",
+//           "time":"Jun 2019 - Aug 2019",
+//           "description":"Systel Telecom · Internship"},
+//         ]
+// },
+// {
+//   "section":"Education",
+//   "icon":"book-outline",
+//   "content":[
+//             {"title":"AWS Cloud Practitioner Programme",
+//             "institution":"African Leadership X (ALX)",
+//             "time":"2023 — 2023",
+//             "description":"African Leadership X (ALX)"},
+//             {"title":" AWS Data Science Programme",
+//             "institution":"Practical Data Scientist Academy (MCIT-PDSA)",
+//             "time":"Dec 2021 — Jul 2022",
+//             "description":"Practical Data Scientist Academy (MCIT-PDSA)"},
+//             {"title":"Bachelor's degree, Electrical and Electronics Engineering",
+//             "institution":"Higher Technological Institute",
+//             "time":"2014 — 2020",
+//             "description":"Higher Technological Institute"},
+//           ]
+//   },
+// ]
 
 
 function addFunc(value)
