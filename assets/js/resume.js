@@ -6,122 +6,7 @@ resume_section.innerHTML =
 <h2 class="h2 article-title">Resume</h2>
 </header>
 
-<section class="timeline">
-
-    <div class="title-wrapper">
-        <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
-        </div>
-
-        <h3 class="h3">Education</h3>
-    </div>
-
-<ol class="timeline-list">
-
-  <li class="timeline-item">
-
-    <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-    <span>2007 — 2008</span>
-
-    <p class="timeline-text">
-      Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-      quas molestias
-      exceptur.
-    </p>
-
-  </li>
-
-  <li class="timeline-item">
-
-    <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-    <span>2006 — 2007</span>
-
-    <p class="timeline-text">
-      Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-      omnis..
-    </p>
-
-  </li>
-
-  <li class="timeline-item">
-
-    <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-    <span>2002 — 2004</span>
-
-    <p class="timeline-text">
-      Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-      magni dolores
-      eos.
-    </p>
-
-  </li>
-
-</ol>
-
-</section>
-
-<section class="timeline">
-
-<div class="title-wrapper">
-  <div class="icon-box">
-    <ion-icon name="book-outline"></ion-icon>
-  </div>
-
-  <h3 class="h3">Experience</h3>
-</div>
-
-<ol class="timeline-list">
-
-  <li class="timeline-item">
-
-    <h4 class="h4 timeline-item-title">Creative director</h4>
-
-    <span>2015 — Present</span>
-
-    <p class="timeline-text">
-      Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-      molestias
-      exceptur.
-    </p>
-
-  </li>
-
-  <li class="timeline-item">
-
-    <h4 class="h4 timeline-item-title">Art director</h4>
-
-    <span>2013 — 2015</span>
-
-    <p class="timeline-text">
-      Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-      quas molestias
-      exceptur.
-    </p>
-
-  </li>
-
-  <li class="timeline-item">
-
-    <h4 class="h4 timeline-item-title">Web designer</h4>
-
-    <span>2010 — 2013</span>
-
-    <p class="timeline-text">
-      Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-      quas molestias
-      exceptur.
-    </p>
-
-  </li>
-
-</ol>
-
-</section>
-
-<section class="skill">
+<!--<section class="skill">
 
 <h3 class="h3 skills-title">My skills</h3>
 
@@ -181,5 +66,95 @@ resume_section.innerHTML =
 
 </ul>
 
-</section>
+</section>-->
 `
+
+const aList = resume_section.querySelector(".timeline-list");
+
+
+items = [
+{
+"section":"Experience",
+"icon":"briefcase-outline",
+"content":[
+          {"title":"Machine Learning Engineer",
+          "institution":"Kemet Artificial Intelligence · Full-time",
+          "time":"Jul 2023 — Present",
+          "description":"Kemet Artificial Intelligence · Full-time"},
+          {"title":"Data Scientist",
+          "institution":"CORELIA · Full-time",
+          "time":"Apr 2022 — Jul 2023",
+          "description":"CORELIA · Full-time"},
+          {"title":"Telecommunication Intern",
+          "institution":"Systel Telecom · Internship",
+          "time":"Jun 2019 - Aug 2019",
+          "description":"Systel Telecom · Internship"},
+        ]
+},
+{
+  "section":"Education",
+  "icon":"book-outline",
+  "content":[
+            {"title":"AWS Cloud Practitioner Programme",
+            "institution":"African Leadership X (ALX)",
+            "time":"2023 — 2023",
+            "description":"African Leadership X (ALX)"},
+            {"title":" AWS Data Science Programme",
+            "institution":"Practical Data Scientist Academy (MCIT-PDSA)",
+            "time":"Dec 2021 — Jul 2022",
+            "description":"Practical Data Scientist Academy (MCIT-PDSA)"},
+            {"title":"Bachelor's degree, Electrical and Electronics Engineering",
+            "institution":"Higher Technological Institute",
+            "time":"2014 — 2020",
+            "description":"Higher Technological Institute"},
+          ]
+  },
+]
+
+
+function addFunc(value)
+{
+  ol = ""
+  for (let i = 0; i < value.content.length; i++) 
+  {
+    ol +=  
+    `
+    <li class="timeline-item">
+
+      <h4 class="h4 timeline-item-title">${value.content[i].title}</h4>
+
+      <p class="timeline-text">
+        ${value.content[i].institution}
+      </p>
+
+      <span>${value.content[i].time}</span>
+
+      <p class="timeline-text">
+        ${value.content[i].description}
+      </p>
+
+    </li>
+    `;
+  }
+
+
+  text = 
+  `
+  <section class="timeline">
+      <div class="title-wrapper">
+          <div class="icon-box">
+              <ion-icon name=${value.icon}></ion-icon>
+          </div>
+
+          <h3 class="h3">${value.section}</h3>
+      </div>
+      <ol class="timeline-list">
+        ${ol}
+      </ol>
+  </section>
+  `;
+
+  resume_section.insertAdjacentHTML('beforeend',text);
+}
+
+items.forEach(addFunc);

@@ -68,10 +68,10 @@ certificates_section.innerHTML =
 
     <div class="modal-img-wrapper">
       <figure class="modal-avatar-box">
-      <!--<img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-canvas-img>-->
+      <!--<img src="./assets/certificates/avatar-1.png" alt="Daniel lewis" width="80" data-canvas-img>-->
       </figure>
 
-      <img src="./assets/images/icon-quote.svg" alt="quote icon">
+      <img src="./assets/certificates/icon-quote.svg" alt="quote icon">
     </div>
 
     <div class="modal-content">
@@ -103,31 +103,31 @@ const certificates_selectList = certificates_section.querySelector("[data-select
 
 certificates_items = [
   {"url":"https://www.credly.com/badges/b4c56cfc-2293-4d97-a09f-cd73a3dc7b0e/linked_in_profile",
-  "thumbnail":"https://media.licdn.com/dms/image/sync/D4D10AQGkkIp0RZljjQ/image-shrink_800/0/1693900616484?e=1695466800&v=beta&t=JILo1secDw-GQF-4rb4epIZDqwdm6i-YYJv4o6FvQAc",
+  "thumbnail":"assets/certificates/AWS Certified Cloud Practitioner certificate.jpg",
   "title":"AWS Certified Cloud Practitioner (CLF)",
   "category":"Amazon Web Services (AWS)",
   "time":"Issued Jun 2023 · Expires Jun 2026",
   "background":"white"},
   {"url":"https://www.credly.com/badges/f5bc36cd-5f7e-4461-8db9-ab8dca322fe1/linked_in_profile",
-  "thumbnail":"https://media.licdn.com/dms/image/sync/D4D10AQFtr8wjNpK-SQ/image-shrink_800/0/1693900038057?e=1695466800&v=beta&t=pQ6I2Uxk2D6yKof0GlSrSRPTJvWScBCcJxXMByOGasU",
+  "thumbnail":"assets/certificates/AWS Certified Machine Learning - Specialty certificate.jpg",
   "title":"AWS Certified Machine Learning - Specialty (MLS)",
   "category":"Amazon Web Services (AWS)",
   "time":"Issued Aug 2023 · Expires Aug 2026",
   "background":"white"},
   {"url":"https://graduation.udacity.com/confirm/TGPZQQ7H",
-  "thumbnail":"assets/images/9ec34961-e7c0-4d8e-affa-c9c60e3c0457.jpg",
+  "thumbnail":"assets/certificates/9ec34961-e7c0-4d8e-affa-c9c60e3c0457.jpg",
   "title":"AWS Machine Learning Foundations",
   "category":"Udacity",
   "time":"Issued Oct 2021",
   "background":"white"},
   {"url":"https://graduation.udacity.com/confirm/LAP4JCEX",
-  "thumbnail":"assets/images/e7ee9d0d-db95-4ba7-a1f0-d50be0904c5d.jpg",
+  "thumbnail":"assets/certificates/e7ee9d0d-db95-4ba7-a1f0-d50be0904c5d.jpg",
   "title":"Advanced Data Analysis Nanodegree",
   "category":"Udacity",
   "time":"Issued Jul 2021",
   "background":"white"},
   {"url":"https://graduation.udacity.com/confirm/QJRXEFH7",
-  "thumbnail":"assets/images/1f53571f-d9e4-44df-a6c5-3853c38c343f.jpg",
+  "thumbnail":"assets/certificates/1f53571f-d9e4-44df-a6c5-3853c38c343f.jpg",
   "title":"Machine Learning Engineer Nanodegree",
   "category":"Udacity",
   "time":"Issued Jul 2021",
