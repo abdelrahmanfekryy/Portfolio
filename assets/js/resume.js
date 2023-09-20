@@ -8,7 +8,7 @@ async function printJSON() {
   return await response.json();
 };
 
-items = printJSON();
+const items = await printJSON();
 
 
 //items = await readFile(new URL("../json/resume_items.json"))
