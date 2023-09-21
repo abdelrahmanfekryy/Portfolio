@@ -86,8 +86,6 @@ certificates_section.innerHTML =
             Show credentials<ion-icon name="exit-outline"></ion-icon>
           </button>
         </a>
-      <!--<iframe  width="80%" allowfullscreen="true" allowscriptaccess="always" frameborder="0" src="https://www.youtube.com/embed/Eaj7pNeIQhs" data-canvas-video>
-        </iframe>-->
       </div>
 
     </div>

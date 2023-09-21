@@ -59,7 +59,7 @@ portfolio_section.innerHTML =
 
 <div class="overlay" data-overlay></div>
 
-<section class="testimonials-modal">
+<section class="testimonials-modal" style="width:100%; height:70%;">
 
   <button class="modal-close-btn" data-canvas-close-btn>
     <ion-icon name="close-outline"></ion-icon>
@@ -73,14 +73,13 @@ portfolio_section.innerHTML =
     <img src="./assets/images/icon-quote.svg" alt="quote icon">
   </div>
 
-  <div class="modal-content">
+  <div class="modal-content" style="width:100%; height:100%;">
 
     <h4 class="h3 modal-title" data-canvas-title>Daniel lewis</h4>
 
     <time datetime="2021-06-14">14 June, 2021</time>
-    <div data-modal-text>
-      <iframe  width="80%" allowfullscreen="true" allowscriptaccess="always" frameborder="0"
-              src="https://www.youtube.com/embed/Eaj7pNeIQhs" data-canvas-video>
+    <div data-modal-text style="width:100%; height:70%;">
+      <iframe  style="width:100%; height:100%;" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Eaj7pNeIQhs" data-canvas-video>
       </iframe>
     </div>
 
@@ -96,6 +95,7 @@ const portfolio_filterList = portfolio_section.querySelector("[data-filter-list]
 const portfolio_selectList = portfolio_section.querySelector("[data-select-list]");
 
 portfolio_items = [
+  {"id":"KuHhqF8J8ZA","title":"tommato detection","category":"projects"},
   {"id":"BAx0LI6NnNg","title":"الهاكر","category":"الدحيح"},
   {"id":"efigiluZEHA","title":"انسان حساس","category":"الدحيح"},
   {"id":"tXZB5AJmrvM","title":"عيال اليومين دول","category":"الدحيح"},
@@ -122,8 +122,8 @@ function portfolio_textFunc(value){
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
             </div>
-        
-            <img src="https://i.ytimg.com/vi/${value.id}/maxresdefault.jpg" alt=${value.category} loading="lazy" data-videos-avatar>
+
+            <img src="https://i.ytimg.com/vi/${value.id}/hqdefault.jpg" alt=${value.category} loading="lazy" data-videos-avatar>
           </figure>
         
           <h3 class="project-title" data-videos-title>${value.title}</h3>
